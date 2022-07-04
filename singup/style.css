@@ -1,0 +1,178 @@
+:root {
+  --btn-color: #596d48;
+  --error-color: #e71f1f;
+  --text-color: #4e4e4e;
+  --background-color: #f9fafb;
+}
+
+@font-face {
+  font-family: norse-font-odin;
+  src: url(../singup/Norse-Bold.otf);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--btn-color);
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+a:active {
+  opacity: 0.9;
+}
+
+input {
+  height: 2rem;
+  width: 85%;
+  max-width: 300px;
+  border: 1.5px solid #c6c8d1;
+  border-radius: 4px;
+  padding: 0 0.5rem;
+}
+
+input:focus {
+  outline: none;
+  border:1.5px solid rgb(30, 135, 255) ;
+  box-shadow:rgba(159, 180, 199, 0.25) 4px 6px 10px 0px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  background-color: var(--background-color);
+}
+
+.left {
+  color: white;
+  height: 100vh;
+  text-align: center;
+  background: fixed no-repeat
+    url(https://images.unsplash.com/photo-1585202900225-6d3ac20a6962?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  max-width: 650px;
+  }
+
+.left .header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  position: relative;
+  top: 20%;
+}
+
+.left .header h1 {
+  font-family: norse-font-odin;
+  font-size: 5rem;
+}
+
+.left footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.right .title {
+  max-width: 600px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.right .title>p {
+  margin-top: 1rem;
+}
+
+.right .signup-form {
+  padding: 1.5rem;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 2px 2px 4px;
+  color: var(--text-color);
+  width: 100%;
+}
+
+.right .signup-form form {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:1rem ;
+  max-width: 750px;
+}
+
+.right .signup-form form .form-input {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  font-size: 0.9rem;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.right .signup-form form .form-input #password_not_match {
+  visibility: hidden;
+  font-size: 0.8rem;
+  color: rgb(250, 91, 91);
+}
+
+.right .login {
+  padding: 1.5rem;
+}
+
+.right .login p {
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  padding: 0.8rem 2.2rem;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 0.8rem;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  font-weight: normal;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:active {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
